@@ -1,4 +1,4 @@
-// require('dotenv').config();
+require('dotenv').config();
 var express = require('express');
 const app = require('express')();
 const server = require('http').Server(app);
@@ -12,7 +12,7 @@ var bodyParser = require('body-parser');
 //   useNewUrlParser: true
 // });
 var cookieParser = require('cookie-parser')
-var port = 3000;
+var port = process.env.PORT||3000;
 // var app = express();
 server.listen(port);
 app.use(cookieParser())
