@@ -1,0 +1,23 @@
+{
+  "name": "student-manager-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.13",
+    "nodemon": "^2.0.1",
+    "socket.io": "^2.3.0"
+  }
+}
