@@ -157,6 +157,4 @@ io.on('connection', socket => {
 
 app.all(['/videocall', '/videocall/:room'], (req, res) => res.sendFile(__dirname + '/call.html'));
 
-app.get('/', (req, res) => {
-  res.send("ahhahaha")
-});
+app.get('/', (req, res) => res.sendFile(__dirname + '/call.html'));
